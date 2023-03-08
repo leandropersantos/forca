@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/reset.css" />
+    <link rel="stylesheet" href="/CSS/default.css" />
+    <link rel="stylesheet" href="/CSS/home.css" />
+    <link rel="stylesheet" href="/CSS/addmovie.css" />
+    <link rel="stylesheet" href="/CSS/hangman.css" />
+    <link rel="stylesheet" href="/CSS/youlost.css" />
+    <link rel="stylesheet" href="/CSS/youwon.css" />
+    <link rel="stylesheet" href="/CSS/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Inter:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Jogo da Forca</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/IMGs/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="home" id="home-hidden">
+        <img src="" alt="" class="logo" />
+        <div class="title">
+          <h1>jogo da forca</h1>
+        </div>
+        <img
+          src="/IMGs/movie-night.svg"
+          alt="ilustração com tela de tv, pipoca e snacks para comer enquanto assiste a um filme"
+          class="movie-night"
+        />
+        <div class="buttons-home">
+          <input
+            type="submit"
+            value="COMEÇAR"
+            class="start-button"
+            id="start-button"
+          />
+          <input
+            type="submit"
+            value="ADICIONAR FILME"
+            class="addmovie-button"
+            id="addmovie-button"
+          />
+        </div>
+      </section>
+
+      <!-- add movie -->
+
+      <section class="add-movie" id="add-movie">
+        <textarea
+          class="addmovie-input"
+          id="addmovie-input"
+          placeholder="Digite um novo filme..."
+        ></textarea>
+        <div class="info" id="info">
+          <img src="/IMGs/alert.svg" alt="alerta" class="alert" />
+          <label for="alert">Máximo de 15 letras.</label>
+        </div>
+        <div class="buttons-addmovie">
+          <input
+            type="submit"
+            value="SALVAR & COMEÇAR"
+            class="save-button"
+            id="save-button"
+          />
+          <input
+            type="submit"
+            value="CANCELAR"
+            class="cancel-button"
+            id="cancel-button"
+          />
+        </div>
+      </section>
+
+      <!-- hangman game -->
+
+      <section class="hangman" id="hangman">
+        <canvas
+          height="600"
+          width="375"
+          class="hangman-canvas"
+          id="hangman-canvas"
+        ></canvas>
+        <div class="underscore" id="underscore"></div>
+        <div class="buttons-hangman" id="buttons-hangman">
+          <input
+            type="submit"
+            value="RECOMEÇAR"
+            class="restart-button"
+            id="restart-button"
+          />
+          <input
+            type="submit"
+            value="DESISTIR"
+            class="quit-button"
+            id="quit-button"
+          />
+        </div>
+      </section>
+
+      <section class="youlost" id="youlost">
+        <img src="/IMGs/vr glasses.png" alt="" class="youlost-img" />
+        <h2 class="youlost-text">você PERDEU!!</h2>
+        <div class="youlost-buttons">
+          <input
+            type="button"
+            value="RECOMEÇAR"
+            class="youlostbutton-restart"
+            id="youlostbutton-restart"
+          />
+        </div>
+      </section>
+
+      <!-- you Lost & you Won screens -->
+
+      <section class="youwon" id="youwon">
+        <img src="/IMGs/gaming.png" alt="" class="youwon-img" />
+        <h2 class="youwon-text">você GANHOU!!</h2>
+        <div class="youwon-buttons">
+          <input
+            type="button"
+            value="NOVO JOGO"
+            class="youwonbutton-newgame"
+            id="youwonbutton-newgame"
+          />
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Ilustrações —
+          <a
+            href="https://icons8.com/illustrations/illustration/63d1442e201e7783dde405b8"
+          >
+            Icons 8
+          </a>
+        </p>
+      </footer>
+    </main>
+    <script type="text/javascript" src="/JS/hangman.js"></script>
+    <script type="text/javascript" src="/JS/canvas.js"></script>
+  </body>
+</html>

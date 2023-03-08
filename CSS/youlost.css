@@ -1,0 +1,55 @@
+.youlost {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.youlost-img {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+}
+
+.youlost-text {
+  position: absolute;
+  top: 60%;
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+  text-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.youlost-buttons {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youlostbutton-restart {
+  box-sizing: border-box;
+  width: 90%;
+  height: 80px;
+
+  background-color: #bdfb5d;
+  border: 3px solid #5c49f0;
+  border-radius: 50px;
+
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #5c49f0;
+}
